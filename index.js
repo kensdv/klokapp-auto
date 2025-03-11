@@ -37,13 +37,13 @@ function centerText(text, color = "cyanBright") {
 
 function akunDelay(minMs, maxMs) {
   const delay = Math.floor(Math.random() * (maxMs - minMs + 1)) + minMs;
-  console.log(chalk.bold.grey(`\n⏳ Menunggu ${delay / 1000} seconds before switching to the next account...\n`));
+  console.log(chalk.bold.grey(`\n⏳ Waiting ${delay / 1000} seconds before switching to the next account...\n`));
   return new Promise((resolve) => setTimeout(resolve, delay));
 }
 
 function taskDelay(minMs, maxMs) {
   const delay = Math.floor(Math.random() * (maxMs - minMs + 1)) + minMs;
-  console.log(chalk.bold.grey(`\n⏳ Menunggu ${delay / 1000} seconds before the next chat...\n`));
+  console.log(chalk.bold.grey(`\n⏳ Waiting ${delay / 1000} seconds before the next chat...\n`));
   return new Promise((resolve) => setTimeout(resolve, delay));
 }
 
