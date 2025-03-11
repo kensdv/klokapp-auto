@@ -297,7 +297,7 @@ async function makeRequests(sessionToken, runNumber) {
   }, spinner, true);
 
   if (!chatResponse) {
-    spinner.fail(chalk.redBright(` `Chat API request failed`));
+    spinner.fail(chalk.redBright(` Request Chat API failed`));
     return { counted: false, dailyLimitReached: false, failed: true };
   } else {
     spinner.succeed(chalk.greenBright(` Chat API response received 📝`));
